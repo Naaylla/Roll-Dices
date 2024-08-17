@@ -1,0 +1,179 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.dices {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.dice {
+  height: 100px;
+  width: 100px;
+  border: 6px solid rgb(15, 15, 15);
+  border-radius: 10px;
+  background-color: rgb(15, 15, 15);
+}
+
+.dot {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: white
+}
+
+/* dice one */
+
+.dice.one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* dice two */
+
+.dice.two {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.dice.two .dot:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+/* dice three */
+
+.dice.three {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.dice.three .dot:nth-of-type(2) {
+  align-self: flex-end;
+  align-self: center;
+
+}
+
+.dice.three .dot:nth-of-type(3) {
+  align-self: flex-end;
+}
+
+/* dice four */
+
+.dice.four {
+  position: relative;
+}
+
+.dice.four .dot {
+  position: absolute;
+}
+
+.dice.four .dot:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.dice.four .dot:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+
+.dice.four .dot:nth-child(3) {
+  bottom: 0;
+  left: 0;
+}
+
+.dice.four .dot:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+
+/* dice five */
+
+
+.dice.five {
+  position: relative;
+}
+
+.dice.five .dot {
+  position: absolute;
+}
+
+.dice.five .dot:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.dice.five .dot:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+
+.dice.five .dot:nth-child(3) {
+  bottom: 0;
+  left: 0;
+}
+
+.dice.five .dot:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+
+.dice.five .dot:nth-child(5) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* dice six */
+
+.dice.six {
+  position: relative;
+}
+
+.dice.six .dot {
+  position: absolute;
+}
+
+.dice.six .dot:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.dice.six .dot:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+
+.dice.six .dot:nth-child(3) {
+  bottom: 0;
+  left: 0;
+}
+
+.dice.six .dot:nth-child(4) {
+  bottom: 0;
+  right: 0;
+}
+
+.dice.six .dot:nth-child(5) {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.dice.six .dot:nth-child(6) {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+}
